@@ -135,17 +135,6 @@ jQuery('.projects-tabs-wrapper .nav-link').click(function(){
   },400)
 })
 
-
-gsap.from(".preload-items",{
-  y:"-100%",
-  duration:.3,
-  delay:.5,
-  stagger:-.1,
-  onComplete: function() {
-    jQuery('.preloader').addClass('disable'); // then only replace with blue div with new height and width
-  }
-})
-
 gsap.from(".hero-back-img",{
   scale:0,
   duration:1,
