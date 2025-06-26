@@ -97,22 +97,6 @@ body{
     font-weight: 700;
     src: url('../fonts/Oswald-Bold.ttf'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-  /* inter-800 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../fonts/Oswald-ExtraBold.ttf'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* inter-900 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 900;
-    src: url('../fonts/Oswald-Heavy.ttf'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Montserrat';
@@ -325,13 +309,13 @@ input{
     opacity: 0;
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 } */
-.web-dev-img {
+/* .web-dev-img {
     max-width: 655px;
     height: 655px;
     border-radius: 50%;
     object-fit: cover;
     object-position: -205px;
-}
+} */
 .hero-content-wrapper h1{
     font-size: 72px;
     font-weight: 700;
@@ -461,7 +445,7 @@ input{
     width: fit-content;
 }
 .bi-content-with-image{
-    padding: 120px 0;
+    padding: 120px 0 40px;
     position: relative;
     overflow-x: hidden;
 }
@@ -473,6 +457,7 @@ input{
     top: 0;
     bottom: 0;
     margin: auto;
+    display: none;
 }
 .bi-content-with-image .logo-absolute.left{
     left: 0;
@@ -497,7 +482,7 @@ input{
     font-weight: 500;
 }
 .bi-content-with-image .margin-top{
-    margin-top: 120px;
+    margin-top: 80px;
 }
 .content-col small {
     font-size: 16px;
@@ -533,11 +518,11 @@ input{
     padding-right: 140px;
 }
 .bi-content-with-image.web-dev .img-col {
-    padding: 25px;
-    border: 2px dashed #3830a5;
+    /* padding: 25px; */
+    /* border: 2px dashed #3830a5; */
     border-radius: 50%;
     position: relative;
-    scale: .85;
+    /* scale: .85; */
 }
 .bi-content-with-image.web-dev .img-col .icons {
     position: absolute;
@@ -593,6 +578,7 @@ input{
     top: 0;
     bottom: 0;
     opacity: .6;
+    display: none;
 }
 .cta-content-wrapper {
     position: relative;
@@ -1295,10 +1281,8 @@ section.bi-work-process.bottom-padding {
     height: 1330px;
 }
 .header-wrapper a img {
-    max-width: 180px;
+    max-width: 250px;
 }
-
-
 :is(.cta-content-wrapper, .footer-form-content) h3 {
     color: #fff;
 }
@@ -1307,4 +1291,31 @@ section.bi-work-process.bottom-padding {
 }
 :is(.cta-content-wrapper, .footer-form-content) small {
     color: #fff;
+}
+.bi-content-with-image.domain-web {
+    padding-bottom: 80px;
+}
+.modal-content {
+    background: linear-gradient(90deg, var(--themeColor) 0%, var(--themeColor) 100%);
+    padding: 20px;
+    border-radius: 20px;
+}
+.modal-header {
+    display: none;
+}
+.modal .bi-form input {
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+.modal .bi-form .col-12 {
+    padding-inline: 10px;
+}
+.modal .bi-form .bi-btn {
+    margin-top: 10px;
 }

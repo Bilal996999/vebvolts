@@ -172,6 +172,12 @@ gsap.from(".hero-content-wrapper h1",{
   delay:1.8,
   stagger:.2,
 })
+gsap.from(".hero-content-wrapper .hero-text",{
+  y:20,
+  opacity:0,
+  duration:1,
+  delay:1.8,
+})
 gsap.from(".hero-content-wrapper p",{
   y:20,
   opacity:0,
