@@ -62,9 +62,133 @@
     .footer-col ul li {
         font-size: 15px;
     }
+    .bi-work-process .row {
+        margin-top: 70px;
+    }
+
+    .bi-work-process {
+        padding: 100px 0;
+        height: 1160px;
+    }
+
+    .work-box p {
+        font-size: 14px;
+    }
+
+    .work-box h4 {
+        font-size: 20px;
+        padding: 0;
+        margin: 15px 0;
+    }
+
+    .work-box {
+        padding: 25px 30px 40px;
+    }
+
+    .work-arrow {
+        top: 85px;
+    }
+    .pricing-box {
+        padding: 35px 40px;
+    }
+
+    .pricing-list li {
+        font-size: 14px;
+    }
+    .pricing-list {
+        margin-bottom: 35px;
+    }
+
+    .price-btn .bi-btn {
+        font-size: 12px;
+        padding: 11px 23px;
+    }
+    .bi-price-section {
+        padding: 100px 0 120px;
+    }
+    .testimonial-slider .item-wrapper p {
+        font-size: 14px;
+    }
+
+    .item-wrapper {
+        padding: 60px 25px 50px;
+    }
+
+    .author-box h2 {
+        font-size: 23px;
+    }
+
+    .author-box img {
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .item-wrapper img.quote {
+        max-width: 70px;
+    }
+    .bi-testimonials {
+        padding: 100px 0;
+    }
+    .serving-wrapper img {
+        width: 279px;
+    }
+    .bi-serving-section {
+        padding: 75px;
+    }
+
+    .footer-form-wrapper input {
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .footer-form-icon h5 {
+        font-size: 17px;
+    }
+
+    .footer-form-icon img {
+        max-width: 34px;
+    }
+
+    .footer-form-content p {
+        font-size: 24px;
+    }
+
+    .bi-footer {
+        padding: 532px 0 20px;
+    }
+    .logo-col {
+        padding-right: 130px;
+    }
+    .bi-projects {
+        padding: 100px 0;
+    }
+    .bi-hero {
+        padding: 154px 0 415px;
+    }
+    .content-col.left-align {
+        padding-left: 50px;
+    }
+
+    .content-col.right-align {
+        padding-right: 50px;
+    }
+    .project-img-box {
+        height: 220px;
+    }
+
 }
 
 @media (max-width: 1399px){
+    .header-wrapper a img {
+        max-width: 180px;
+    }
+
+    .header-wrapper .bi-btn {
+        padding:11px 18px
+    }
+    .header-wrapper {
+        padding: 1rem 2rem;
+    }
     .navbar-nav .nav-link {
         font-size: 12px;
     }
@@ -737,26 +861,80 @@
     .testimonial-slider .slick-list {
         padding: 40px 20px 60px;
     }
-    .navbar-collapse{
-        opacity: 0 !important;
-        position: absolute !important;
-        left: -12px !important;
-        top: 70px !important;
-        width: 100vw !important;
-        display: block !important;
-        height: fit-content !important;
-        max-width: 100% !important;
-        flex: 1 0 100% !important;
-        transition: .5s !important;
+    nav.navbar{
+        position:absolute;
+        width:100%;
+        text-align:right;
     }
-    .navbar-collapse.show{
-        opacity: 1 !important;
+    .navbar-toggler{
+        margin-left:auto !important;
+        margin-right:15px !important;
     }
-    .navbar-collapse.collapse.show .navbar-nav {
-        width: 100vw !important;
-        flex: 1 0 100% !important;
-        padding: 20px !important;
-        background-color: #000 !important;
+    .navbar-collapse {
+        position:absolute;
+        left:-14px;
+        top:60px;
+        width:100%;
+        background-color:#000;
+        padding: 20px 0;
+    }
+    .navbar-nav .nav-link{
+        font-size:20px;
+    }
+    .header-wrapper{
+        justify-content:space-between
+    }
+    .bi-header .bi-btn {
+        display:none;
+    }
+    .header-wrapper a{
+        order:1;
+        flex:0;
+    }
+    .bi-content-with-image.web-dev .img-col {
+        padding: 0;
+    }
+
+    .bi-content-with-image.domain-web .img-col {
+        text-align: center;
+    }
+
+    .bi-content-with-image.marketing .img-col {
+        margin-bottom: 20px;
+    }
+
+    .bi-content-with-image:is(.domain-web,.marketing) {
+        padding: 40px 0 80px;
+    }
+
+    .logo-col .bi-btn {
+        display: none;
+    }
+    .footer-form-icon h5 {
+        font-size: 13px !important;
+    }
+
+    .footer-form-icon img {
+        max-width: 22px;
+    }
+
+    .footer-form-content .d-flex {
+        flex-direction: row;
+        margin-top: 10px !important;
+    }
+
+    .footer-form-icon {
+        margin-left: 13px;
+    }
+
+    .footer-form-content p {
+        font-size: 14px;
+    }
+    .footer-form-wrapper textarea {
+        border-radius: 26px;
+    }
+    .header-wrapper a img{
+        max-width: 230px;
     }
 }
 

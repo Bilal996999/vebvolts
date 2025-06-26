@@ -301,7 +301,7 @@ input{
 .bi-hero{
     background: url("../img/hero-bg.jpg") no-repeat center;
     background-size: cover;
-    padding: 230px 0 380px;
+    padding: 180px 0 420px;
     overflow: hidden;
 }
 /* .hero-content-wrapper{
@@ -571,6 +571,11 @@ input{
     position: relative;
     /* padding: 120px 0; */
     background-color: var(--themeColor);
+    background: url('../img/roadmap-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+.bi-cta.alt{
+    background: var(--themeColor);
 }
 .bi-cta .cta-absolute {
     position: absolute;
@@ -1335,11 +1340,24 @@ section.bi-work-process.bottom-padding {
 .bi-content-with-image.marketing {
     margin-top: -65px;
 }
-.branding-wrapper .project-img-box {
+.project-img-box {
     height: 290px;
     border-radius: 20px;
     padding: 0;
 }
-.branding-wrapper .project-img-box img{
+img{
     border-radius: 20px;
+}
+.logo-col {
+    padding-right: 180px;
+}
+.bi-btn.outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+span.stroke-text.white {
+    -webkit-text-stroke-color: #ffffff;
+}
+.bi-cta.alt .cta-img-wrapper img {
+    height: 550px;
 }
