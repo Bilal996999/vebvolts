@@ -445,7 +445,7 @@ input{
     width: fit-content;
 }
 .bi-content-with-image{
-    padding: 120px 0 40px;
+    padding: 120px 0 80px;
     position: relative;
     overflow-x: hidden;
 }
@@ -1293,7 +1293,7 @@ section.bi-work-process.bottom-padding {
     color: #fff;
 }
 .bi-content-with-image.domain-web {
-    padding-bottom: 80px;
+    padding-bottom: 90px;
 }
 .modal-content {
     background: linear-gradient(90deg, var(--themeColor) 0%, var(--themeColor) 100%);
@@ -1318,4 +1318,20 @@ section.bi-work-process.bottom-padding {
 }
 .modal .bi-form .bi-btn {
     margin-top: 10px;
+}
+.bi-content-with-image.domain-web .img-col{
+    text-align:right
+}
+.bi-content-with-image.domain-web .img-col img {
+    max-width: 85%;
+}
+.bi-content-with-image.marketing {
+    padding-bottom: 20px;
+}
+.pricing-list {
+    height: 415px;
+    overflow-y: auto;
+}
+.bi-content-with-image.marketing {
+    margin-top: -65px;
 }

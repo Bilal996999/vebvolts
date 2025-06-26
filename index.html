@@ -233,16 +233,46 @@
     </div>
   </section>
 
+  <section class="bi-content-with-image domain-web">
+    <div class="container">
+      <img src="./assets/img/absolute-logo-img.png" class="img-fluid left logo-absolute" />
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 col-sm-12">
+          <div class="content-col right-align">
+            <small data-aos="fade-left" data-aos-duration="1700">
+              Strategic Branding, Real-World Impact
+            </small>
+            <h3 data-aos="fade-left" data-aos-duration="1700" data-aos-delay="400">
+              Strategic Branding That Powers Growth
+            </h3>
+            <p data-aos="fade-left" data-aos-duration="1700" data-aos-delay="700">
+              We are a renowned force in empowering businesses through impactful branding solutions meticulously crafted
+              to capture attention, build trust, and elevate identity. Whether you're launching a startup or leading an
+              established enterprise, our branding services are tailored to bring your vision to life—with strategic
+              clarity, creative excellence, and market-ready distinction.
+            </p>
+            <a href="#" class="bi-btn mt-4">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="img-col" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800">
+            <img src="./assets/img/Branding-service-image.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="bi-cta">
     <img src="./assets/img/cta-absolute-img.png" class="img-fluid cta-absolute" />
     <div class="container">
       <div class="row justify-content-center align-items-end">
         <div class="col-md-6 col-sm-12">
-          <div class="cta-content-wrapper">
+          <div class="cta-content-wrapper">  
             <h3 data-aos="fade-up" data-aos-duration="1700" data-aos-delay="800">
-              Go Online With
-              <span class="stroke-text">Techverge tailored</span>
-              digital solutions.
+              Launch Your Digital
+              <span class="stroke-text">Journey with  </span>
+              Techverg Solutions
             </h3>
             <a href="#" data-bs-toggle="modal" data-bs-target="#modal" data-price="N/A" data-title="Header Contact"
               class="bi-btn open-modal">
@@ -266,7 +296,7 @@
           Our <span class="theme-color"> Recent </span> Projects
         </h2>
         <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="800">
-          We have been serving businesses for years.
+          A glimpse into the solutions we've crafted for forward-thinking brands.
         </p>
       </div>
     </div>
@@ -694,7 +724,7 @@
                 <p>
                   Perfect for early-stage founders validating their idea
                 </p>
-                <ul class="pricing-list">
+                <ul class="pricing-list scrollable-box">
                   <li>Discovery call + project brief</li>
                   <li>Wireframes for 3-5 core screens</li>
                   <li>UI/UX design for 5-7 screens</li>
@@ -724,7 +754,7 @@
                 <p>
                   Ideal for scaling startups and growing businesses
                 </p>
-                <ul class="pricing-list">
+                <ul class="pricing-list scrollable-box">
                   <li>Discovery call + comprehensive project brief</li>
                   <li>Wireframes for 6-8 key screens</li>
                   <li>High-fidelity UI/UX wireframes & design</li>
@@ -754,7 +784,7 @@
                 <p>
                   Built for enterprises and high-demand digital platforms
                 </p>
-                <ul class="pricing-list">
+                <ul class="pricing-list scrollable-box">
                   <li>In-depth product strategy session + technical planning</li>
                   <li>Wireframes for 12-15+ screens & flows</li>
                   <li>Tailored UI/UX experience across web and mobile</li>
@@ -1349,17 +1379,79 @@
   <script>
 
     (function () {
-      const locomotiveScroll = new LocomotiveScroll({
-        lenisOptions: {
-          lerp: 0.08,
-          wheelMultiplier: 0.8,
-          smoothTouch: false,
-        },
-      });
-      document.querySelector(".backToTopBtn").addEventListener("click", () => {
-        locomotiveScroll.scrollTo(0);
-      });
-    })();
+
+            const locomotiveScroll = new LocomotiveScroll();
+
+
+            const scrollableBoxes = document.querySelectorAll('.scrollable-box');
+
+            scrollableBoxes.forEach((box) => {
+                // Mouse wheel scrolling
+                box.addEventListener('wheel', function (e) {
+                    const delta = e.deltaY;
+                    const up = delta < 0;
+
+                    const atTop = this.scrollTop === 0;
+                    const atBottom = this.scrollHeight - this.scrollTop === this.clientHeight;
+
+                    if ((up && atTop) || (!up && atBottom)) {
+                        // Let Locomotive Scroll scroll
+                        return;
+                    }
+
+                    // Prevent Locomotive Scroll from hijacking scroll
+                    e.stopPropagation();
+                }, { passive: false });
+
+                // Touch support (optional)
+                box.addEventListener('touchstart', (e) => {
+                    box._startY = e.touches[0].clientY;
+                }, { passive: true });
+
+                box.addEventListener('touchmove', (e) => {
+                    const currentY = e.touches[0].clientY;
+                    const delta = currentY - box._startY;
+                    const up = delta > 0;
+
+                    const atTop = box.scrollTop === 0;
+                    const atBottom = box.scrollHeight - box.scrollTop === box.clientHeight;
+
+                    if ((up && atTop) || (!up && atBottom)) {
+                        return;
+                    }
+
+                    e.stopPropagation();
+                }, { passive: false });
+            });
+
+            document.querySelector(".backToTopBtn").addEventListener("click", () => {
+              locomotiveScroll.scrollTo(0);
+            });
+
+        })();
+        function removeDataScrollIfNecessary() {
+
+            var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var thresholdWidth = 991; // Adjust this threshold as needed
+            var elementsWithDataScroll = document.querySelectorAll('[data-scroll]');
+            if (windowWidth < thresholdWidth) {
+
+                elementsWithDataScroll.forEach(function (element) {
+
+                    element.removeAttribute('data-scroll');
+
+                });
+            }
+        }
+
+        // Call the function initially to set the attribute based on the initial window width
+
+        removeDataScrollIfNecessary();
+        // Add an event listener to handle window resize
+        window.addEventListener('resize', removeDataScrollIfNecessary);
+    
+    
+        
 
   </script>
   <script>
