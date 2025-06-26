@@ -1345,9 +1345,6 @@ section.bi-work-process.bottom-padding {
     border-radius: 20px;
     padding: 0;
 }
-img{
-    border-radius: 20px;
-}
 .logo-col {
     padding-right: 180px;
 }
@@ -1360,4 +1357,38 @@ span.stroke-text.white {
 }
 .bi-cta.alt .cta-img-wrapper img {
     height: 550px;
+}
+.web-hero {
+    max-width:600px;
+    height:550px;
+    object-fit:fill;
+    left:70px;
+    bottom:70px;
+}
+.bi-cta.inner{
+    background: var(--themeColor);
+}
+.inner .bi-content-with-image .margin-top {
+    margin-top: 0;
+}
+.inner .bi-projects {
+    padding-top: 30px;
+}
+.inner .bi-price-section {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.bi-heading-and-para {
+    margin-bottom: 70px;
+}
+.bi-content-with-image.web-dev.inner-page .img-col {
+    border: none;
+    text-align: left;
+    padding-bottom:80px;
+}
+.bi-content-with-image.web-dev.inner-page .img-col img {
+    height: 610px;
+}
+.bi-testimonials .bi-heading-and-para {
+    margin-bottom: 0;
 }
