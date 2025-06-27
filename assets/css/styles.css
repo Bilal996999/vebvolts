@@ -1503,3 +1503,6 @@ span.stroke-text.white {
 .inner.app .cta-content-wrapper {
     padding: 70px 0 90px;
 }
+.inner.branding .bi-content-with-image.domain-web {
+    padding-top: 90px;
+}
