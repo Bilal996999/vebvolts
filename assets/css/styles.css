@@ -1506,3 +1506,6 @@ span.stroke-text.white {
 .inner.branding .bi-content-with-image.domain-web {
     padding-top: 90px;
 }
+.inner.branding .bi-projects {
+    padding-top: 0;
+}
