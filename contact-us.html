@@ -1,66 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/locomotive-scroll.min.css" />
-    <link rel="stylesheet" href="./assets/css/slick.css" />
-    <link rel="stylesheet" href="./assets/css/aos.css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Contact Us </title>
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/locomotive-scroll.min.css" />
+  <link rel="stylesheet" href="./assets/css/slick.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/responsive.css" />
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+</head>
 
-  <body>
-    <section class="preloader">
-      <div class="preload-items"></div>
-      <div class="preload-items"></div>
-      <div class="preload-items"></div>
-      <div class="preload-items"></div>
-      <div class="preload-items"></div>
-      <div class="preload-items"></div>
-      <div class="preload-items"></div>
-    </section>
+<body class="inner contact">
 
-    <header class="bi-header">
-        <div class="container-fluid">
-            <div class="header-wrapper">
-                <a href="./index.html"><img src="./assets/img/footer-logo.png" class="img-fluid"/></a>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./web-development.html">Website Development</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./web-hosting.html">Web Hosting</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./digital-marketing.html">Digital Marketing</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./packages.html">Packages</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="./contact-us.html">Contact us</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                </nav>
-                <a href="#" class="bi-btn">HIRE AN EXPERT</a>
+  <header class="bi-header">
+    <div class="container-fluid">
+      <div class="header-wrapper">
+        <a href="./index.html"><img src="./assets/img/logo-main-white.png" class="img-fluid" /></a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="./app-development.html">App Development</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./web-development.html">Website Development</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./branding.html">Branding</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Digital Marketing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact-us.html">Contact us</a>
+                </li>
+              </ul>
             </div>
-        </div>
-    </header>
+          </div>
+        </nav>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modal" data-price="N/A" data-title="Header Contact"
+          class="bi-btn open-modal">
+          HIRE AN EXPERT</a>
+      </div>
+    </div>
+  </header>
 
     <section class="bi-hero">
       <div class="container">
@@ -79,12 +70,12 @@
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="hero-img-wrapper">
-              <img
+              <!-- <img
                 src="./assets/img/hero-img.png"
                 class="img-fluid hero-back-img"
-              />
+              /> -->
               <img
-                src="./assets/img/contact/hero-banner-img.png"
+                src="./assets/img/contact/contact-img.png"
                 class="img-fluid hero-front-img packages"
               />
             </div>
@@ -93,236 +84,376 @@
       </div>
     </section>
 
-    <section class="bi-contact-us-form-section">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-6 col-sm-12">
-                    <div class="footer-form-content">
-                            <h3
-                            data-aos="fade-up"
-                            data-aos-duration="1700"
-                            data-aos-delay="800"
-                            >
-                            Let's 
-                            <span class="theme-color">scale up your</span>
-                            brand together
-                            </h3>
-                        <div class="d-flex flex-column gap-5 mt-5">
-                            <div class="d-flex footer-form-icon" data-aos="fade-up"
-                            data-aos-duration="1500"
-                            data-aos-delay="900" data-aos-offset="0">
-                                <img src="./assets/img/phone-icon.png" class="img-fluid"/>
-                                <h5>
-                                    +1 (760) 284-7048
-                                </h5>
-                            </div>
-                            <div class="d-flex footer-form-icon" data-aos="fade-up"
-                            data-aos-duration="1500"
-                            data-aos-delay="900" data-aos-offset="0">
-                                <img src="./assets/img/envelope-icon.png" class="img-fluid"/>
-                                <h5>
-                                    info@majestywebs.com
-                                </h5>
-                            </div>
-                            <div class="d-flex footer-form-icon" data-aos="fade-up"
-                            data-aos-duration="1500"
-                            data-aos-delay="900" data-aos-offset="0">
-                                <img src="./assets/img/contact/location-icn.png" class="img-fluid"/>
-                                <h5>
-                                    8244 Latrobe Ave Burbank, IL 60459
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
+    <section class="footer-form">
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="footer-form-content">
+              <small data-aos="fade-up" data-aos-duration="1800" data-aos-delay="800">Let's Talk</small>
+              <h3 data-aos="fade-up" data-aos-duration="1700" data-aos-delay="800">
+                Our 24/7 customer
+                <span class="stroke-text">support is just a</span>
+                ring away!
+              </h3>
+              <p data-aos="fade-up" data-aos-duration="1700" data-aos-delay="900">
+                Dial us now and get your project ready within the deadline.
+              </p>
+              <div class="d-flex gap-5 mt-5">
+                <div class="d-flex footer-form-icon" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"
+                  data-aos-offset="0">
+                  <img src="./assets/img/phone-icon.png" class="img-fluid" />
+                  <h5>
+                    +1 (760) 284-7048
+                  </h5>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="footer-form-wrapper" data-aos="fade-left"
-                        data-aos-duration="1500"
-                        data-aos-delay="900" data-aos-offset="0">
-                            <form>
-                                <input type="text" class="form-control" placeholder="Name*" required/>
-                                <input type="email" class="form-control" placeholder="Email Address*" required/>
-                                <input type="tel" class="form-control" placeholder="Phone Number*" required/>
-                                <textarea class="form-control" rows="5" placeholder="Your Message..."></textarea>
-                                <div class="d-flex gap-3 align-items-center">
-                                    <input type="checkbox" name="check"/>
-                                    <small>
-                                        By submitting this form you consent to receive occasional SMS messages for updates and promotions. Reply STOP to unsubscribe. For more details, please review our Privacy Policy.
-                                    </small>
-                                </div>
-                                <button class="bi-btn">
-                                    Book Now
-                                </button>
-                            </form>
-                        </div>
+                <div class="d-flex footer-form-icon" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="900"
+                  data-aos-offset="0">
+                  <img src="./assets/img/envelope-icon.png" class="img-fluid" />
+                  <h5>
+                    info@techverge.com
+                  </h5>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="footer-form-wrapper" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900"
+              data-aos-offset="0">
+              <form class="bi-form" method="post">
+                <input type="hidden" name="Packagetitle" value="Footer Contact Form">
+                <input type="text" name="name" class="form-control" placeholder="Name*" required />
+                <input type="email" name="email" class="form-control" placeholder="Email Address*" required />
+                <input type="tel" name="phone" class="form-control" placeholder="Phone Number*" required />
+                <textarea class="form-control" name="message" rows="5" placeholder="Your Message..."></textarea>
+                <button class="bi-btn">
+                  Book Now
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer class="bi-footer">
-        <div class="container">
-            <div class="row justify-content-start align-items-start">
-                <div class="col-lg-5 col-md-12">
-                    <div class="logo-col" data-aos="fade-up"
-                    data-aos-duration="1800"
-                    data-aos-delay="300">
-                        <img src="./assets/img/footer-logo.png" class="img-fluid"/>
-                        <p>
-                            Majestywebs is an all in one web solution platform where you'll find each fragment detailed with skills and pure talent.
-                        </p>
-                        <a href="#" class="bi-btn">
-                            Book Now
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                    <div class="footer-col" data-aos="fade-up"
-                    data-aos-duration="1800"
-                    data-aos-delay="500">
-                        <h4>
-                            SERVICES
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="./web-development.html">
-                                    Website Development
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./web-hosting.html">
-                                    Web Hosting
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./domain-and-hosting.html">
-                                    Get a Free Domain
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./domain-and-hosting.html">
-                                    SSL
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Emails Marketing
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
-                    <div class="footer-col" data-aos="fade-up"
-                    data-aos-duration="1800"
-                    data-aos-delay="700">
-                        <h4>
-                            Quick Links
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="./seo.html">
-                                    SEO Marketing
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./smm.html">
-                                    Social Media Marketing
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./contact-us.html">
-                                    Contact us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Terms & Conditions
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Privacy Policy
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-12">
-                    <div class="footer-col" data-aos="fade-up"
-                    data-aos-duration="1800"
-                    data-aos-delay="900">
-                        <h4>
-                            Connect With Us
-                        </h4>
-                        <ul>
-                            <li>
-                                <a href="#" class="phone-num">
-                                    +1 (760) 284-7048
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    info@majestywebs.com
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    8244 Latrobe Ave Burbank, IL 60459
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bottom-footer" >
-                <p>
-                    Copyright © 2024 - <span class="theme-color">Majesty Webs</span>, All rights reserved
-                </p>
-            </div>
-            
+  <footer class="bi-footer">
+    <div class="container">
+      <div class="row justify-content-start align-items-start">
+        <div class="col-xl-5 col-lg-12">
+          <div class="logo-col" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="300">
+            <img src="./assets/img/logo-main-white.png" class="img-fluid" />
+            <p>
+              Techverge is an all in one web solution platform where you'll find each fragment detailed with skills and
+              pure talent.
+            </p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modal" data-price="N/A" data-title="Header Contact"
+              class="bi-btn open-modal">
+              Book Now
+            </a>
+          </div>
         </div>
-    </footer>
+        <div class="col-xl-2 col-lg-4 col-sm-6 col-12">
+          <div class="footer-col" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="500">
+            <h4>
+              SERVICES
+            </h4>
+            <ul>
+              <li>
+                <a href="./web-development.html">
+                  Website Development
+                </a>
+              </li>
+              <li>
+                <a href="./web-hosting.html">
+                  App Development
+                </a>
+              </li>
+              <li>
+                <a href="./domain-and-hosting.html">
+                  Branding
+                </a>
+              </li>
+              <li>
+                <a href="./domain-and-hosting.html">
+                  Digital Marketing
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-sm-6 col-12">
+          <div class="footer-col" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="700">
+            <h4>
+              Quick Links
+            </h4>
+            <ul>
+              <li>
+                <a href="./index.html">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="./smm.html">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="./contact-us.html">
+                  Contact us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-12">
+          <div class="footer-col" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="900">
+            <h4>
+              Connect With Us
+            </h4>
+            <ul>
+              <li>
+                <a href="#" class="phone-num">
+                  +1 (760) 284-7048
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  info@Techverge .com
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  8244 Latrobe Ave Burbank, IL 60459
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    <button class="backToTopBtn"><i class="fas fa-angle-up"></i></button>
+      <div class="bottom-footer">
+        <p>
+          Copyright © 2024 - <span class="theme-color">Techverge</span>, All rights reserved
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+<button class="backToTopBtn"><i class="fas fa-angle-up"></i></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" id='modal-close' data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="package-name text-white" id='modal-package'>
+          </h3>
+          <div class="package-price text-white" id='modal-price-number'>
+          </div>
+          <form class="bi-form" method="post">
+            <input type="hidden" name="PackagePrice" id="modal-price" />
+            <input type="hidden" name="Packagetitle" id="modal-title" />
+
+            <div class="row justify-content-between align-items-center">
+              <div class="col-sm-6 col-12">
+                <input type="text" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="col-sm-6 col-12">
+                <input type="tel" name="phone" placeholder="Phone Number" required />
+              </div>
+              <div class="col-12">
+                <input type="email" name="email" placeholder="Email Address" required />
+              </div>
+              <button class="bi-btn w-100">Submit Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <script src="./assets/js/jquery-3.7.0.min.js"></script>
-    <script src="./assets/js/font-awesome-15-14-4.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" 
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer">
+  <script src="./assets/js/jquery-3.7.0.min.js"></script>
+  <script src="./assets/js/font-awesome-15-14-4.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
-    <script src="./assets/js/locomotive-scroll.min.js"></script>
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
-    <script src="./assets/js/custom.js"></script>
-    <script>
+  <script src="./assets/js/locomotive-scroll.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
 
-        AOS.init();
+  <script>
 
-      (function () {
-        const locomotiveScroll = new LocomotiveScroll({
-          lenisOptions: {
-            lerp: 0.08,
-            wheelMultiplier: 0.8,
-            smoothTouch: false,
-          },
+    (function () {
+
+      const locomotiveScroll = new LocomotiveScroll();
+
+
+      const scrollableBoxes = document.querySelectorAll('.scrollable-box');
+
+      scrollableBoxes.forEach((box) => {
+        // Mouse wheel scrolling
+        box.addEventListener('wheel', function (e) {
+          const delta = e.deltaY;
+          const up = delta < 0;
+
+          const atTop = this.scrollTop === 0;
+          const atBottom = this.scrollHeight - this.scrollTop === this.clientHeight;
+
+          if ((up && atTop) || (!up && atBottom)) {
+            // Let Locomotive Scroll scroll
+            return;
+          }
+
+          // Prevent Locomotive Scroll from hijacking scroll
+          e.stopPropagation();
+        }, { passive: false });
+
+        // Touch support (optional)
+        box.addEventListener('touchstart', (e) => {
+          box._startY = e.touches[0].clientY;
+        }, { passive: true });
+
+        box.addEventListener('touchmove', (e) => {
+          const currentY = e.touches[0].clientY;
+          const delta = currentY - box._startY;
+          const up = delta > 0;
+
+          const atTop = box.scrollTop === 0;
+          const atBottom = box.scrollHeight - box.scrollTop === box.clientHeight;
+
+          if ((up && atTop) || (!up && atBottom)) {
+            return;
+          }
+
+          e.stopPropagation();
+        }, { passive: false });
+      });
+
+      document.querySelector(".backToTopBtn").addEventListener("click", () => {
+        locomotiveScroll.scrollTo(0);
+      });
+
+    })();
+    function removeDataScrollIfNecessary() {
+
+      var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      var thresholdWidth = 991; // Adjust this threshold as needed
+      var elementsWithDataScroll = document.querySelectorAll('[data-scroll]');
+      if (windowWidth < thresholdWidth) {
+
+        elementsWithDataScroll.forEach(function (element) {
+
+          element.removeAttribute('data-scroll');
+
         });
-        document.querySelector(".backToTopBtn").addEventListener("click", () => {
-            locomotiveScroll.scrollTo(0);
-        });
-      })();
+      }
+    }
 
-    </script>
+    // Call the function initially to set the attribute based on the initial window width
+
+    removeDataScrollIfNecessary();
+    // Add an event listener to handle window resize
+    window.addEventListener('resize', removeDataScrollIfNecessary);
+
+
+
+
+  </script>
+
+  <script>
+    // Wait for DOM to be ready
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Open modal & populate hidden fields
+      document.querySelectorAll('.open-modal').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.preventDefault();
+
+          const price = btn.getAttribute('data-price');
+          const title = btn.getAttribute('data-title');
+
+          document.getElementById('modal-price').value = price;
+          document.getElementById('modal-title').value = title;
+          if (price !== 'N/A') {
+            document.getElementById('modal-price-number').innerHTML = '$' + price;
+          } else {
+            document.getElementById('modal-price-number').innerHTML = '';
+          }
+          //   document.getElementById('modal-price-number').innerHTML = '$'+price;
+          if (title !== 'Header Contact' && title !== 'Create Your Website' && title !== 'Get a Quote') {
+            document.getElementById('modal-package').innerHTML = title;
+          }
+          else {
+            document.getElementById('modal-package').innerHTML = 'Get a Quote';
+          }
+
+        });
+      });
+
+      // Close modal when clicking outside modal-content
+      window.addEventListener('click', e => {
+        if (e.target === document.getElementById('modal')) {
+          document.getElementById('modal').style.display = 'none';
+          //   alert('here');
+        }
+      });
+
+      // ✅ Use event delegation for form submit
+      document.addEventListener('submit', function (event) {
+        if (event.target.matches('.bi-form')) {
+          event.preventDefault();
+          const form = event.target;
+          let formData = new FormData(form);
+
+          fetch('send_email.php', {
+            method: 'POST',
+            body: formData
+          })
+            .then(response => response.text())
+            .then(data => {
+              const trimmedData = data.trim();
+
+              if (trimmedData === 'success') {
+                form.reset();
+                document.getElementById('modal').style.display = 'none';
+
+                setTimeout(() => {
+                  window.location.href = 'https://shopifyofficials.com/thankyou.html';
+                }, 1000);
+              } else {
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              alert('Error sending email!');
+            });
+        }
+      });
+
+    });
+
+  </script>
+
   </body>
 </html>
